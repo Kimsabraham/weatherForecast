@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head> 
+    
+    <meta charset="UTF-8" />
+    <meta name="description" content="Website grab weather inforamtion from a server API" />
+    <meta name="keywords" content="weather, forecast, ikemous, iek, barranco, city, rain, hot, cold," />
+    <meta name="author" content="Ikemous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Weather</title>
+
+    <link rel="icon" href="./Assets/images/cloud.jpg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="./Assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        
+        <header class="container-full">
+            <section>
+                <article class="col-sm-12">
+                    <h1 class="text-center">Weather Dashboard</h1>
+                </article>
+            </section>
+        </header>
+
+        <main class="container weather">
+            <section class="row">
+                <section class="col-sm-3">
+                    <article class="row listCol">
+                        <h5>Search For a City:</h5>
+                    </article>  
+                    <article class="row listCol">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Type City Name" id="cityInput" />
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button" id="addBtn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="row listCol">
+                        <ul class="list-group" id="preSetCities">
+                            <li class="list-group-item" data-search="Austin">Austin</li>
+                            <li class="list-group-item" data-search="Chicago">Chicago</li>
+                            <li class="list-group-item" data-search="New York">New York</li>
+                            <li class="list-group-item" data-search="Orlando">Orlando</li>
+                            <li class="list-group-item" data-search="San Francisco">San Francisco</li>
+                            <li class="list-group-item" data-search="Seattle">Seattle</li>
+                            <li class="list-group-item" data-search="Denver">Denver</li>
+                            <li class="list-group-item" data-search="Atlanta">Atlanta</li>
+                        </ul>
+                    </article>
+
+                    <article class="row listCol">
+                        <div class="dropDown col-sm-12">
+                            <button id="savedListButton" class="btn btn-primary">Search History</button>
+                            <div class="dropDownContent">
+                                <ul class="list-group" id="citiesList">
+                                </ul> 
+                            </div>
+                        </div>
+                        <button id="clearButton" class="btn btn-dark">Clear History</button>
+                    </article>
+                </section>
+                    
+                <section class="col-sm-9 weatherRow">
+                    <section class="row ">
+                        <div class="card mainCard">
+                            <div class="card-body">
+                                <div class="row">
+                                    <h4 class="col-sm-12 card-title" id="cityHeader"> City </h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p class="card-text" id="tempText"> Temp: </p>
+                                        <p class="card-text" id="humidityText"> Humidity: </p>
+                                        <p class="card-text" id="windSpeedText"> WindSpeed: </p>
+                                        <p class="card-text">UV Index: <span id="indexText"></span> </p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="row" id="mainCardIcon" alt="icon"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <h3>5-Day Forecast: </h3>
+
+                    <article class="card-deck" id="forecastDiv">
+
+                    </article>
+
+                </section>
+
+            </section>
+            
+        </main>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/js/App.js"></script>
+
+</body>
+
+</html>

@@ -1,3 +1,0 @@
-# this file is so that my API key never gets discoverd by the public
-.env
-node_modules
