@@ -119,6 +119,7 @@ function setForecastCard(day) {
   $humidityRow.append($humidityParagraph);
 }
 
+// main weather card using moment date to track the time frame by days
 function setMainWeatherCard(weather) {
   let townName = weather.name;
   let townCountry = weather.sys.country;
