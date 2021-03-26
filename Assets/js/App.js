@@ -3,7 +3,6 @@ if (search === null) search = "Bujumbura";
 
 let savedCities = [];
 let showCities = false;
-
 function init() {
   let queryURL =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -40,7 +39,7 @@ function loadSavedCities() {
     $("#citiesList").append($listItem);
   }
 }
-// grabs the latitude and longitude to accuratly get location of city
+// API key that grabs city by lon and lat
 function getForecast(lat, lon) {
   let forecastURL =
     "https://api.openweathermap.org/data/2.5/onecall?appid=16da2c71dd8c2c76dfce15f0f75a5dea&lat=" +
