@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 16px 0;
+    background: #252525;
+}
+
+h1 {
+    color: #F5F5F5;
+}
+
+h3 {
+    padding-top: 24px;
+}
+
+h4 {
+    padding: 8px 0;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+.link {
+    display: block;
+}
+
+.card { 
+    color: #252525;
+    background-color: #F5F5F5;    
+    border: 1px solid;
+    border-color: #25252570;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-body img {
+    height: 100px;
+}
+
+.row {
+    margin-left:0;
+    margin-right:0;
+}
+
+ul {
+    width: 100%;
+}
+
+
+#indexText {
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.uvLow {
+    background-color: green;
+}
+
+.uvModerate {
+    background-color: yellow;
+}
+
+.uvHigh {
+    background-color: orange;
+}
+
+.uvVeryHigh {
+    background-color: red;
+}
+
+.uvExtreme {
+    background-color: violet;
+}
+
+.forecast {
+    margin-right: 5px!important;
+    margin-left: 5px!important;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #007BFF;
+    color: #F5F5F5;
+}
+
+.forecast .card-body {
+    margin: 0;
+    padding: 5px;
+    left: 0;
+    margin-left: -24px;
+    padding-right: 0px;
+}
+.forecast .card-body img {
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.forecast .card-body h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.listCol {
+    padding: 6px 0;
+}
+
+.list-group-item {
+    color: #252525;
+    background-color: #F5F5F5;
+}
+
+#preSetCities {
+    width: 100%;
+}
+
+.dropDown {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.dropDownContent {
+    display: none;
+    background-color: #F5F5F5;
+    width: 100%;
+}
+
+#clearButton, #savedListButton {
+    margin-top: 12px;
+    width: 100%;
+    color: #F5F5F5;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+}
+
+#mainCardIcon {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainCard {
+    width: 100%;
+    border: 1px solid;
+    border-color: #25252570;
+    background: #F5F5F5; 
+}
+
+.weather {
+    padding: 30px 0;
+}
+
+#forecastDiv {
+    margin: 0 -4px;
+}
+
+/* Media Screen Responsive */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 800px;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .container-full{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .wrapper {
+        max-width: 500px;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .container-full{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 365px) {
+    .wrapper {
+        max-width: 365px;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .container-full{
+        max-width: 100%;
+        width: 100%;
+        margin-left: 10px!important;
+    }
+}
