@@ -11,7 +11,7 @@ Github Repo: https://github.com/Kimsabraham/weatherForecast-06
 ### Output
 
 screenshot of final product:
-[![MyFinalForm](Assets\images\WeatherScreenshot.png)]
+![](Assets\images\WeatherScreenshot.png)
 
 ## Contributing
 
