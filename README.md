@@ -1,4 +1,4 @@
-# HW 06 Weather Dashboard
+# Weather Dashboard
 
 ## Description
 
