@@ -2,7 +2,7 @@
 
 ## Description
 
-This homework we had to use a 3rd party API to make our website to give it more functionality but without us having to actually code everything. Using API keys with Json made it alot easier to intergrate to create a fully functioning site because the data was already stored, this gives the devloper a chance to enhance the user's experience without actually have to hard code elements.
+For this project we had to use a 3rd party API to make our website to give it more functionality but without us having to actually code everything. Using API keys with Json made it alot easier to intergrate to create a fully functioning site because the data was already stored, this gives the devloper a chance to enhance the user's experience without actually have to hard code elements.
 
 URL: https://kimsabraham.github.io/weatherForecast-06/
 
